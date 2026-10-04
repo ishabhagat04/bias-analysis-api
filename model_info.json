@@ -1,0 +1,15 @@
+{
+  "model_name": "Demographic Parity",
+  "features": [
+    "age",
+    "c_charge_degree",
+    "priors_count",
+    "race",
+    "sex",
+    "juv_fel_count",
+    "juv_misd_count"
+  ],
+  "sensitive_feature": "race_binary",
+  "accuracy": 0.6775981524249423,
+  "spd": 0.3389773725647047
+}
