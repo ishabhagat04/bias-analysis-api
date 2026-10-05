@@ -5,6 +5,11 @@ import pandas as pd
 from flask import Flask, request, jsonify
 import json
 import os
+import sklearn.compose._column_transformer as _ct
+if not hasattr(_ct, '_RemainderColsList'):
+    class _RemainderColsList(list):
+        pass
+    _ct._RemainderColsList = _RemainderColsList
 
 # Load model and preprocessor
 model = joblib.load('bias_model.pkl')
